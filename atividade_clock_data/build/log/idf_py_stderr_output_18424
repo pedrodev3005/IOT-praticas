@@ -1,0 +1,4 @@
+Command: /Users/pedrolucena/.espressif/python_env/idf5.5_py3.14_env/bin/python /Users/pedrolucena/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem5B3D1455981 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace /Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/build/ntp_clock.elf /Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/build/bootloader/bootloader.elf -m '/Users/pedrolucena/.espressif/python_env/idf5.5_py3.14_env/bin/python' '/Users/pedrolucena/esp/esp-idf/tools/idf.py' '-p' '/dev/cu.usbmodem5B3D1455981'
+[0;33m--- esp-idf-monitor 1.9.0 on /dev/cu.usbmodem5B3D1455981 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m

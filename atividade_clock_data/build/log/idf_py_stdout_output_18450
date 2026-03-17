@@ -1,0 +1,511 @@
+Command: /Users/pedrolucena/.espressif/python_env/idf5.5_py3.14_env/bin/python /Users/pedrolucena/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem5B3D1455981 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace /Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/build/ntp_clock.elf /Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/build/bootloader/bootloader.elf -m '/Users/pedrolucena/.espressif/python_env/idf5.5_py3.14_env/bin/python' '/Users/pedrolucena/esp/esp-idf/tools/idf.py' '-p' '/dev/cu.usbmodem5B3D1455981'
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x16f4
+load:0x4086b910,len:0xed0
+load:0x4086e610,len:0x319c
+entry 0x4086b91a
+[0;32mI (23) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar 16 2026 11:53:31[0m
+[0;32mI (24) boot: chip revision: v0.2[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=420a0020 size=1dcdch (122076) map[0m
+[0;32mI (105) esp_image: segment 1: paddr=0002dd04 vaddr=40800000 size=02314h (  8980) load[0m
+[0;32mI (107) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=98c38h (625720) map[0m
+[0;32mI (224) esp_image: segment 3: paddr=000c8c60 vaddr=40802314 size=1c3d8h (115672) load[0m
+[0;32mI (255) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (255) boot: Disabling RNG early entropy source...[0m
+[0;32mI (265) cpu_start: Unicore app[0m
+[0;32mI (274) cpu_start: GPIO 17 and 16 are used as console UART I/O pins[0m
+[0;32mI (274) cpu_start: Pro cpu start user code[0m
+[0;32mI (274) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (276) app_init: Application information:[0m
+[0;32mI (280) app_init: Project name:     ntp_clock[0m
+[0;32mI (284) app_init: App version:      1[0m
+[0;32mI (287) app_init: Compile time:     Mar 16 2026 11:53:24[0m
+[0;32mI (292) app_init: ELF file SHA256:  eaa29fca3...[0m
+[0;32mI (297) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (301) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (304) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (308) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (312) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (318) heap_init: At 40824080 len 00058590 (353 KiB): RAM[0m
+[0;32mI (324) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (329) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (335) spi_flash: detected chip: generic[0m
+[0;32mI (338) spi_flash: flash io: dio[0m
+[0;33mW (341) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (353) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (359) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (366) coexist: coex firmware version: 093e3d2[0m
+[0;32mI (370) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (374) main_task: Started on CPU0[0m
+[0;32mI (374) main_task: Calling app_main()[0m
+[0;32mI (394) example_connect: Start example_connect.[0m
+[0;32mI (394) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (394) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (404) wifi:wifi driver task: 4082a204, prio:23, stack:6656, core=0[0m
+[0;32mI (404) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (404) wifi:wifi certification version: v7.0[0m
+[0;32mI (404) wifi:config NVS flash: enabled[0m
+[0;32mI (414) wifi:config nano formatting: disabled[0m
+[0;32mI (414) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (424) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (424) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (434) wifi:Init management short buffer num: 32[0m
+[0;32mI (434) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (434) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (444) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (444) wifi:Init static rx buffer num: 10[0m
+[0;32mI (454) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (454) wifi_init: rx ba win: 6[0m
+[0;32mI (454) wifi_init: accept mbox: 6[0m
+[0;32mI (464) wifi_init: tcpip mbox: 32[0m
+[0;32mI (464) wifi_init: udp mbox: 6[0m
+[0;32mI (464) wifi_init: tcp mbox: 6[0m
+[0;32mI (474) wifi_init: tcp tx win: 5760[0m
+[0;32mI (474) wifi_init: tcp rx win: 5760[0m
+[0;32mI (474) wifi_init: tcp mss: 1440[0m
+[0;32mI (484) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (484) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (484) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (494) phy_init: phy_version 343,b513b46,Nov 14 2025,16:34:12[0m
+[0;33mW (584) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (584) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (584) wifi:(agc)0x600a7128:0xd21f0c20, min.avgNF:0xce->0xd2(dB), RCalCount:0x1f0, min.RRssi:0xc20(-62.00)[0m
+[0;32mI (594) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (604) wifi:mode : sta (a0:f2:62:45:de:48)[0m
+[0;32mI (604) wifi:enable tsf[0m
+[0;32mI (604) example_connect: Connecting to NOTE_CALRINHA 7639...[0m
+[0;33mW (614) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (624) example_connect: Waiting for IP(s)[0m
+[0;32mI (3024) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (5434) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (7844) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (10244) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (12654) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (15064) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (17464) example_connect: WiFi Connect failed 7 times, stop reconnect.[0m
+[0;33mW (17464) wifi:(itwt)itwt_stop_process![0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x4200c74a
+file: "./main/ntp_clock.c" line 56
+func: app_main
+expression: example_connect()
+
+abort() was called at PC 0x4080780d on core 0
+Core  0 register dump:
+MEPC    : 0x40807858  RA      : 0x40807816  SP      : 0x40826f50  GP      : 0x4081b514  
+TP      : 0x408270b0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x40826fb4  A0      : 0x40826f7c  A1      : 0x40826fb2  
+A2      : 0x00000000  A3      : 0x40826fa9  A4      : 0x00000001  A5      : 0x40824000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/build/bootloader/bootloader.elf"
+panic_abort (details=details@entry=0x40826f7c "abort() was called at PC 0x4080780d on core 0") at /Users/pedrolucena/esp/esp-idf/components/esp_system/panic.c:491
+491	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x40826f7c "abort() was called at PC 0x4080780d on core 0") at /Users/pedrolucena/esp/esp-idf/components/esp_system/panic.c:491
+#1  0x40807816 in esp_system_abort (details=details@entry=0x40826f7c "abort() was called at PC 0x4080780d on core 0") at /Users/pedrolucena/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x4080ed62 in abort () at /Users/pedrolucena/esp/esp-idf/components/newlib/src/abort.c:38
+#3  0x40807810 in _esp_error_check_failed (rc=<optimized out>, file=file@entry=0x420a37d8 "", line=line@entry=56, function=function@entry=0x420b1064 <__func__.0> "", expression=expression@entry=0x420a3820 "") at /Users/pedrolucena/esp/esp-idf/components/esp_system/esp_err.c:49
+#4  0x4200c74e in app_main () at /Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/main/ntp_clock.c:56
+#5  0x420985b0 in main_task (args=<error reading variable: value has been optimized out>) at /Users/pedrolucena/esp/esp-idf/components/freertos/app_startup.c:208
+#6  0x40808b78 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /Users/pedrolucena/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:255
+
+
+
+ELF file SHA256: eaa29fca3
+
+Rebooting...
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0xc (SW_CPU),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4001975a
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x16f4
+load:0x4086b910,len:0xed0
+load:0x4086e610,len:0x319c
+entry 0x4086b91a
+[0;32mI (26) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 16 2026 11:53:31[0m
+[0;32mI (28) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (30) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (68) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=420a0020 size=1dcdch (122076) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002dd04 vaddr=40800000 size=02314h (  8980) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=98c38h (625720) map[0m
+[0;32mI (364) esp_image: segment 3: paddr=000c8c60 vaddr=40802314 size=1c3d8h (115672) load[0m
+[0;32mI (425) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (426) boot: Disabling RNG early entropy source...[0m
+[0;32mI (436) cpu_start: Unicore app[0m
+[0;32mI (445) cpu_start: GPIO 17 and 16 are used as console UART I/O pins[0m
+[0;32mI (445) cpu_start: Pro cpu start user code[0m
+[0;32mI (445) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (447) app_init: Application information:[0m
+[0;32mI (451) app_init: Project name:     ntp_clock[0m
+[0;32mI (455) app_init: App version:      1[0m
+[0;32mI (458) app_init: Compile time:     Mar 16 2026 11:53:24[0m
+[0;32mI (463) app_init: ELF file SHA256:  eaa29fca3...[0m
+[0;32mI (468) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (472) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (475) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (479) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (483) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (489) heap_init: At 40824080 len 00058590 (353 KiB): RAM[0m
+[0;32mI (495) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (500) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (506) spi_flash: detected chip: generic[0m
+[0;32mI (509) spi_flash: flash io: dio[0m
+[0;33mW (512) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (524) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (530) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (537) coexist: coex firmware version: 093e3d2[0m
+[0;32mI (541) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (545) main_task: Started on CPU0[0m
+[0;32mI (545) main_task: Calling app_main()[0m
+[0;32mI (565) example_connect: Start example_connect.[0m
+[0;32mI (565) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (565) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (575) wifi:wifi driver task: 4082a204, prio:23, stack:6656, core=0[0m
+[0;32mI (575) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (575) wifi:wifi certification version: v7.0[0m
+[0;32mI (575) wifi:config NVS flash: enabled[0m
+[0;32mI (585) wifi:config nano formatting: disabled[0m
+[0;32mI (585) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (595) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (595) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (605) wifi:Init management short buffer num: 32[0m
+[0;32mI (605) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (605) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (615) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (615) wifi:Init static rx buffer num: 10[0m
+[0;32mI (625) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (625) wifi_init: rx ba win: 6[0m
+[0;32mI (625) wifi_init: accept mbox: 6[0m
+[0;32mI (635) wifi_init: tcpip mbox: 32[0m
+[0;32mI (635) wifi_init: udp mbox: 6[0m
+[0;32mI (635) wifi_init: tcp mbox: 6[0m
+[0;32mI (645) wifi_init: tcp tx win: 5760[0m
+[0;32mI (645) wifi_init: tcp rx win: 5760[0m
+[0;32mI (645) wifi_init: tcp mss: 1440[0m
+[0;32mI (655) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (655) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (655) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (665) phy_init: phy_version 343,b513b46,Nov 14 2025,16:34:12[0m
+[0;33mW (755) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (755) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (755) wifi:(agc)0x600a7128:0xd21a6a10, min.avgNF:0xce->0xd2(dB), RCalCount:0x1a6, min.RRssi:0xa10(-95.00)[0m
+[0;32mI (765) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (775) wifi:mode : sta (a0:f2:62:45:de:48)[0m
+[0;32mI (775) wifi:enable tsf[0m
+[0;32mI (785) example_connect: Connecting to NOTE_CALRINHA 7639...[0m
+[0;33mW (785) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (795) example_connect: Waiting for IP(s)[0m
+[0;32mI (3195) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (5605) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (8015) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (10415) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (12825) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (15235) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (17635) example_connect: WiFi Connect failed 7 times, stop reconnect.[0m
+[0;33mW (17645) wifi:(itwt)itwt_stop_process![0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x4200c74a
+file: "./main/ntp_clock.c" line 56
+func: app_main
+expression: example_connect()
+
+abort() was called at PC 0x4080780d on core 0
+Core  0 register dump:
+MEPC    : 0x40807858  RA      : 0x40807816  SP      : 0x40826f50  GP      : 0x4081b514  
+TP      : 0x408270b0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x40826fb4  A0      : 0x40826f7c  A1      : 0x40826fb2  
+A2      : 0x00000000  A3      : 0x40826fa9  A4      : 0x00000001  A5      : 0x40824000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/build/bootloader/bootloader.elf"
+panic_abort (details=details@entry=0x40826f7c "abort() was called at PC 0x4080780d on core 0") at /Users/pedrolucena/esp/esp-idf/components/esp_system/panic.c:491
+491	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x40826f7c "abort() was called at PC 0x4080780d on core 0") at /Users/pedrolucena/esp/esp-idf/components/esp_system/panic.c:491
+#1  0x40807816 in esp_system_abort (details=details@entry=0x40826f7c "abort() was called at PC 0x4080780d on core 0") at /Users/pedrolucena/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x4080ed62 in abort () at /Users/pedrolucena/esp/esp-idf/components/newlib/src/abort.c:38
+#3  0x40807810 in _esp_error_check_failed (rc=<optimized out>, file=file@entry=0x420a37d8 "", line=line@entry=56, function=function@entry=0x420b1064 <__func__.0> "", expression=expression@entry=0x420a3820 "") at /Users/pedrolucena/esp/esp-idf/components/esp_system/esp_err.c:49
+#4  0x4200c74e in app_main () at /Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/main/ntp_clock.c:56
+#5  0x420985b0 in main_task (args=<error reading variable: value has been optimized out>) at /Users/pedrolucena/esp/esp-idf/components/freertos/app_startup.c:208
+#6  0x40808b78 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /Users/pedrolucena/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:255
+
+
+
+ELF file SHA256: eaa29fca3
+
+Rebooting...
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0xc (SW_CPU),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4001975a
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x16f4
+load:0x4086b910,len:0xed0
+load:0x4086e610,len:0x319c
+entry 0x4086b91a
+[0;32mI (26) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 16 2026 11:53:31[0m
+[0;32mI (28) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (30) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (68) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=420a0020 size=1dcdch (122076) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002dd04 vaddr=40800000 size=02314h (  8980) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=98c38h (625720) map[0m
+[0;32mI (364) esp_image: segment 3: paddr=000c8c60 vaddr=40802314 size=1c3d8h (115672) load[0m
+[0;32mI (425) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (426) boot: Disabling RNG early entropy source...[0m
+[0;32mI (436) cpu_start: Unicore app[0m
+[0;32mI (445) cpu_start: GPIO 17 and 16 are used as console UART I/O pins[0m
+[0;32mI (445) cpu_start: Pro cpu start user code[0m
+[0;32mI (445) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (447) app_init: Application information:[0m
+[0;32mI (451) app_init: Project name:     ntp_clock[0m
+[0;32mI (455) app_init: App version:      1[0m
+[0;32mI (458) app_init: Compile time:     Mar 16 2026 11:53:24[0m
+[0;32mI (463) app_init: ELF file SHA256:  eaa29fca3...[0m
+[0;32mI (468) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (472) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (475) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (479) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (483) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (490) heap_init: At 40824080 len 00058590 (353 KiB): RAM[0m
+[0;32mI (495) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (500) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (506) spi_flash: detected chip: generic[0m
+[0;32mI (509) spi_flash: flash io: dio[0m
+[0;33mW (512) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (524) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (530) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (537) coexist: coex firmware version: 093e3d2[0m
+[0;32mI (541) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (546) main_task: Started on CPU0[0m
+[0;32mI (546) main_task: Calling app_main()[0m
+[0;32mI (566) example_connect: Start example_connect.[0m
+[0;32mI (566) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (566) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (576) wifi:wifi driver task: 4082a204, prio:23, stack:6656, core=0[0m
+[0;32mI (576) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (576) wifi:wifi certification version: v7.0[0m
+[0;32mI (576) wifi:config NVS flash: enabled[0m
+[0;32mI (586) wifi:config nano formatting: disabled[0m
+[0;32mI (586) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (596) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (596) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (606) wifi:Init management short buffer num: 32[0m
+[0;32mI (606) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (606) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (616) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (616) wifi:Init static rx buffer num: 10[0m
+[0;32mI (626) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (626) wifi_init: rx ba win: 6[0m
+[0;32mI (626) wifi_init: accept mbox: 6[0m
+[0;32mI (636) wifi_init: tcpip mbox: 32[0m
+[0;32mI (636) wifi_init: udp mbox: 6[0m
+[0;32mI (636) wifi_init: tcp mbox: 6[0m
+[0;32mI (646) wifi_init: tcp tx win: 5760[0m
+[0;32mI (646) wifi_init: tcp rx win: 5760[0m
+[0;32mI (646) wifi_init: tcp mss: 1440[0m
+[0;32mI (656) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (656) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (656) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (666) phy_init: phy_version 343,b513b46,Nov 14 2025,16:34:12[0m
+[0;33mW (756) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (756) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (756) wifi:(agc)0x600a7128:0xd2084a0e, min.avgNF:0xce->0xd2(dB), RCalCount:0x84, min.RRssi:0xa0e(-95.12)[0m
+[0;32mI (766) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (776) wifi:mode : sta (a0:f2:62:45:de:48)[0m
+[0;32mI (776) wifi:enable tsf[0m
+[0;32mI (786) example_connect: Connecting to NOTE_CALRINHA 7639...[0m
+[0;33mW (786) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (796) example_connect: Waiting for IP(s)[0m
+[0;32mI (3206) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (5606) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (8016) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (10426) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (12826) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (15236) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (17646) example_connect: WiFi Connect failed 7 times, stop reconnect.[0m
+[0;33mW (17646) wifi:(itwt)itwt_stop_process![0m
+ESP_ERROR_CHECK failed: esp_err_t 0xffffffff (ESP_FAIL) at 0x4200c74a
+file: "./main/ntp_clock.c" line 56
+func: app_main
+expression: example_connect()
+
+abort() was called at PC 0x4080780d on core 0
+Core  0 register dump:
+MEPC    : 0x40807858  RA      : 0x40807816  SP      : 0x40826f50  GP      : 0x4081b514  
+TP      : 0x408270b0  T0      : 0x37363534  T1      : 0x7271706f  T2      : 0x33323130  
+S0/FP   : 0x00000004  S1      : 0x40826fb4  A0      : 0x40826f7c  A1      : 0x40826fb2  
+A2      : 0x00000000  A3      : 0x40826fa9  A4      : 0x00000001  A5      : 0x40824000  
+A6      : 0x00000000  A7      : 0x76757473  S2      : 0x00000000  S3      : 0x00000000  
+S4      : 0x00000000  S5      : 0x00000000  S6      : 0x00000000  S7      : 0x00000000  
+S8      : 0x00000000  S9      : 0x00000000  S10     : 0x00000000  S11     : 0x00000000  
+T3      : 0x6e6d6c6b  T4      : 0x6a696867  T5      : 0x66656463  T6      : 0x62613938  
+MSTATUS : 0x00001881  MTVEC   : 0x40800001  MCAUSE  : 0x00000002  MTVAL   : 0x00000000  
+MHARTID : 0x00000000  
+
+add symbol table from file "/Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/build/bootloader/bootloader.elf"
+panic_abort (details=details@entry=0x40826f7c "abort() was called at PC 0x4080780d on core 0") at /Users/pedrolucena/esp/esp-idf/components/esp_system/panic.c:491
+491	    asm("unimp");   // should be an invalid operation on RISC-V targets
+#0  panic_abort (details=details@entry=0x40826f7c "abort() was called at PC 0x4080780d on core 0") at /Users/pedrolucena/esp/esp-idf/components/esp_system/panic.c:491
+#1  0x40807816 in esp_system_abort (details=details@entry=0x40826f7c "abort() was called at PC 0x4080780d on core 0") at /Users/pedrolucena/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+#2  0x4080ed62 in abort () at /Users/pedrolucena/esp/esp-idf/components/newlib/src/abort.c:38
+#3  0x40807810 in _esp_error_check_failed (rc=<optimized out>, file=file@entry=0x420a37d8 "", line=line@entry=56, function=function@entry=0x420b1064 <__func__.0> "", expression=expression@entry=0x420a3820 "") at /Users/pedrolucena/esp/esp-idf/components/esp_system/esp_err.c:49
+#4  0x4200c74e in app_main () at /Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/main/ntp_clock.c:56
+#5  0x420985b0 in main_task (args=<error reading variable: value has been optimized out>) at /Users/pedrolucena/esp/esp-idf/components/freertos/app_startup.c:208
+#6  0x40808b78 in vPortTaskWrapper (pxCode=<optimized out>, pvParameters=<optimized out>) at /Users/pedrolucena/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:255
+
+
+
+ELF file SHA256: eaa29fca3
+
+Rebooting...
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0xc (SW_CPU),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4001975a
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x16f4
+load:0x4086b910,len:0xed0
+load:0x4086e610,len:0x319c
+entry 0x4086b91a
+[0;32mI (26) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 16 2026 11:53:31[0m
+[0;32mI (28) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v0.3[0m
+[0;32mI (30) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (62) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (68) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (75) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=420a0020 size=1dcdch (122076) map[0m
+[0;32mI (130) esp_image: segment 1: paddr=0002dd04 vaddr=40800000 size=02314h (  8980) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=98c38h (625720) map[0m
+[0;32mI (364) esp_image: segment 3: paddr=000c8c60 vaddr=40802314 size=1c3d8h (115672) load[0m
+[0;32mI (425) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (426) boot: Disabling RNG early entropy source...[0m
+[0;32mI (436) cpu_start: Unicore app[0m
+[0;32mI (445) cpu_start: GPIO 17 and 16 are used as console UART I/O pins[0m
+[0;32mI (445) cpu_start: Pro cpu start user code[0m
+[0;32mI (445) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (447) app_init: Application information:[0m
+[0;32mI (451) app_init: Project name:     ntp_clock[0m
+[0;32mI (455) app_init: App version:      1[0m
+[0;32mI (458) app_init: Compile time:     Mar 16 2026 11:53:24[0m
+[0;32mI (463) app_init: ELF file SHA256:  eaa29fca3...[0m
+[0;32mI (468) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (472) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (475) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (479) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (483) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (490) heap_init: At 40824080 len 00058590 (353 KiB): RAM[0m
+[0;32mI (495) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (500) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (506) spi_flash: detected chip: generic[0m
+[0;32mI (509) spi_flash: flash io: dio[0m
+[0;33mW (512) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (524) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (530) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (537) coexist: coex firmware version: 093e3d2[0m
+[0;32mI (541) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (546) main_task: Started on CPU0[0m
+[0;32mI (546) main_task: Calling app_main()[0m
+[0;32mI (566) example_connect: Start example_connect.[0m
+[0;32mI (566) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (566) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (576) wifi:wifi driver task: 4082a204, prio:23, stack:6656, core=0[0m
+[0;32mI (576) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (576) wifi:wifi certification version: v7.0[0m
+[0;32mI (576) wifi:config NVS flash: enabled[0m
+[0;32mI (586) wifi:config nano formatting: disabled[0m
+[0;32mI (586) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (596) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (596) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (606) wifi:Init management short buffer num: 32[0m
+[0;32mI (606) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (606) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (616) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (616) wifi:Init static rx buffer num: 10[0m
+[0;32mI (626) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (626) wifi_init: rx ba win: 6[0m
+[0;32mI (626) wifi_init: accept mbox: 6[0m
+[0;32mI (636) wifi_init: tcpip mbox: 32[0m
+[0;32mI (636) wifi_init: udp mbox: 6[0m
+[0;32mI (636) wifi_init: tcp mbox: 6[0m
+[0;32mI (646) wifi_init: tcp tx win: 5760[0m
+[0;32mI (646) wifi_init: tcp rx win: 5760[0m
+[0;32mI (646) wifi_init: tcp mss: 1440[0m
+[0;32mI (656) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (656) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (656) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (666) phy_init: phy_version 343,b513b46,Nov 14 2025,16:34:12[0m
+[0;33mW (756) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (756) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (756) wifi:(agc)0x600a7128:0xd20f5a1e, min.avgNF:0xce->0xd2(dB), RCalCount:0xf5, min.RRssi:0xa1e(-94.12)[0m
+[0;32mI (766) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (776) wifi:mode : sta (a0:f2:62:45:de:48)[0m
+[0;32mI (776) wifi:enable tsf[0m
+[0;32mI (776) example_connect: Connecting to NOTE_CALRINHA 7639...[0m
+[0;33mW (786) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (796) example_connect: Waiting for IP(s)[0m
+[0;32mI (3196) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (5606) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (8016) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (10416) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m
+[0;32mI (12826) example_connect: Wi-Fi disconnected 201, trying to reconnect...[0m

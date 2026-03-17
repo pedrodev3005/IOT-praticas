@@ -1,0 +1,49 @@
+Command: /Users/pedrolucena/.espressif/python_env/idf5.5_py3.14_env/bin/python /Users/pedrolucena/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem5B3D1455981 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace /Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/build/ntp_clock.elf /Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/build/bootloader/bootloader.elf -m '/Users/pedrolucena/.espressif/python_env/idf5.5_py3.14_env/bin/python' '/Users/pedrolucena/esp/esp-idf/tools/idf.py' '-p' '/dev/cu.usbmodem5B3D1455981'
+[0;33m--- esp-idf-monitor 1.9.0 on /dev/cu.usbmodem5B3D1455981 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x4086b910: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4086e610: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4086b91a: [0;33mcall_start_cpu0[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200c74a: [0;33mapp_main[0m[0m at [0;32m/Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/main/ntp_clock.c[0m[0m:[1;31m56[0m
+[0m--- 0x4080780d: [0;33m_esp_error_check_failed[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40807858: [0;33mpanic_abort[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m491[0m
+[0m--- 0x40807816: [0;33mesp_vApplicationTickHook[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800001: [0;33m_vector_table[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4001975a: [0;33msoftware_reset_cpu[0m[0m in [0;32mROM[0m
+[0m--- 0x4086b910: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4086e610: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4086b91a: [0;33mcall_start_cpu0[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200c74a: [0;33mapp_main[0m[0m at [0;32m/Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/main/ntp_clock.c[0m[0m:[1;31m56[0m
+[0m--- 0x4080780d: [0;33m_esp_error_check_failed[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40807858: [0;33mpanic_abort[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m491[0m
+[0m--- 0x40807816: [0;33mesp_vApplicationTickHook[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800001: [0;33m_vector_table[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4001975a: [0;33msoftware_reset_cpu[0m[0m in [0;32mROM[0m
+[0m--- 0x4086b910: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4086e610: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4086b91a: [0;33mcall_start_cpu0[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x4200c74a: [0;33mapp_main[0m[0m at [0;32m/Users/pedrolucena/Documents/setimo_periodo/IoT/ntp_clock/main/ntp_clock.c[0m[0m:[1;31m56[0m
+[0m--- 0x4080780d: [0;33m_esp_error_check_failed[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/esp_system/esp_err.c[0m[0m:[1;31m49[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40807858: [0;33mpanic_abort[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/esp_system/panic.c[0m[0m:[1;31m491[0m
+[0m--- 0x40807816: [0;33mesp_vApplicationTickHook[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/esp_system/freertos_hooks.c[0m[0m:[1;31m31[0m
+[0m--- 0x40800001: [0;33m_vector_table[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x4001975a: [0;33msoftware_reset_cpu[0m[0m in [0;32mROM[0m
+[0m--- 0x4086b910: [0;33mesp_bootloader_get_description[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m39[0m
+[0m--- 0x4086e610: [0;33mesp_flash_encryption_enabled[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/bootloader_support/src/flash_encrypt.c[0m[0m:[1;31m89[0m
+[0m--- 0x4086b91a: [0;33mcall_start_cpu0[0m[0m at [0;32m/Users/pedrolucena/esp/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m
