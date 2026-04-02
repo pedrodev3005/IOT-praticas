@@ -1,0 +1,140 @@
+Command: /Users/pedrolucena/.espressif/python_env/idf5.5_py3.14_env/bin/python /Users/pedrolucena/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem5B3D1455981 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace /Users/pedrolucena/Documents/setimo_periodo/IoT/mqtt_ifpb/build/mqtt_ifpb.elf /Users/pedrolucena/Documents/setimo_periodo/IoT/mqtt_ifpb/build/bootloader/bootloader.elf -m '/Users/pedrolucena/.espressif/python_env/idf5.5_py3.14_env/bin/python' '/Users/pedrolucena/esp/esp-idf/tools/idf.py' '-p' '/dev/cu.usbmodem5B3D1455981'
+) esp_image: segment 3: paddr=000eaf7c vaddr=408�ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875730,len:0x16f4
+load:0x4086b910,len:0xed0
+load:0x4086e610,len:0x319c
+entry 0x4086b91a
+[0;32mI (23) boot: ESP-IDF v5.5.3 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Mar 26 2026 11:13:59[0m
+[0;32mI (24) boot: chip revision: v0.2[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (38) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=420b8020 size=22610h (140816) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=00032638 vaddr=40800000 size=059e0h ( 23008) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00038020 vaddr=42000020 size=b2f54h (733012) map[0m
+[0;32mI (250) esp_image: segment 3: paddr=000eaf7c vaddr=408059e0 size=18dfch (101884) load[0m
+[0;32mI (278) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (278) boot: Disabling RNG early entropy source...[0m
+[0;32mI (288) cpu_start: Unicore app[0m
+[0;32mI (297) cpu_start: GPIO 17 and 16 are used as console UART I/O pins[0m
+[0;32mI (297) cpu_start: Pro cpu start user code[0m
+[0;32mI (297) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (299) app_init: Application information:[0m
+[0;32mI (303) app_init: Project name:     mqtt_ifpb[0m
+[0;32mI (307) app_init: App version:      1[0m
+[0;32mI (310) app_init: Compile time:     Mar 26 2026 11:13:51[0m
+[0;32mI (315) app_init: ELF file SHA256:  31da00185...[0m
+[0;32mI (320) app_init: ESP-IDF:          v5.5.3[0m
+[0;32mI (323) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (327) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (331) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (335) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (341) heap_init: At 40824220 len 000583F0 (352 KiB): RAM[0m
+[0;32mI (346) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (352) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (358) spi_flash: detected chip: generic[0m
+[0;32mI (361) spi_flash: flash io: dio[0m
+[0;33mW (364) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (376) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (382) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (389) coexist: coex firmware version: 093e3d2[0m
+[0;32mI (393) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (397) main_task: Started on CPU0[0m
+[0;32mI (397) main_task: Calling app_main()[0m
+[0;32mI (417) example_connect: Start example_connect.[0m
+[0;32mI (417) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (417) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (427) wifi:wifi driver task: 4087f330, prio:23, stack:6656, core=0[0m
+[0;32mI (427) wifi:wifi firmware version: 4df78f2[0m
+[0;32mI (427) wifi:wifi certification version: v7.0[0m
+[0;32mI (427) wifi:config NVS flash: enabled[0m
+[0;32mI (427) wifi:config nano formatting: disabled[0m
+[0;32mI (437) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (447) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (447) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (447) wifi:Init management short buffer num: 32[0m
+[0;32mI (457) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (457) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (467) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (467) wifi:Init static rx buffer num: 10[0m
+[0;32mI (477) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (477) wifi_init: rx ba win: 6[0m
+[0;32mI (477) wifi_init: accept mbox: 6[0m
+[0;32mI (487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (487) wifi_init: udp mbox: 6[0m
+[0;32mI (487) wifi_init: tcp mbox: 6[0m
+[0;32mI (487) wifi_init: tcp tx win: 5760[0m
+[0;32mI (497) wifi_init: tcp rx win: 5760[0m
+[0;32mI (497) wifi_init: tcp mss: 1440[0m
+[0;32mI (497) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (507) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (507) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (517) phy_init: phy_version 343,b513b46,Nov 14 2025,16:34:12[0m
+[0;33mW (597) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (597) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (607) wifi:(agc)0x600a7128:0xd2199a0e, min.avgNF:0xce->0xd2(dB), RCalCount:0x198, min.RRssi:0xa0e(-95.12)[0m
+[0;32mI (617) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (617) wifi:mode : sta (a0:f2:62:45:de:48)[0m
+[0;32mI (627) wifi:enable tsf[0m
+[0;32mI (627) example_connect: Connecting to pedro...[0m
+[0;33mW (627) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (637) example_connect: Waiting for IP(s)[0m
+[0;32mI (3047) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3047) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (3047) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (3057) wifi:state: auth -> init (0x1c0)[0m
+[0;32mI (3057) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3067) example_connect: Wi-Fi disconnected 202, trying to reconnect...[0m
+[0;32mI (5477) example_connect: Wi-Fi disconnected 205, trying to reconnect...[0m
+[0;32mI (7887) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7887) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (7887) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (7897) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (7937) wifi:(assoc)RESP, Extended Capabilities length:4, operating_mode_notification:0[0m
+[0;32mI (7937) wifi:(assoc)RESP, Extended Capabilities, MBSSID:0, TWT Responder:0, OBSS Narrow Bandwidth RU In OFDMA Tolerance:0[0m
+[0;32mI (7937) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (7947) wifi:(trc)phytype:CBW20-SGI, snr:81, maxRate:144, highestRateIdx:0[0m
+[0;33mW (7947) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (7957) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:81, ampduState:wait operational[0m
+[0;32mI (7967) wifi:ifidx:0, rssi:-15, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (7977) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)[0m
+[0;32mI (8007) wifi:connected with pedro, aid = 3, channel 1, BW20, bssid = a2:5c:7d:05:a5:e3[0m
+[0;32mI (8007) wifi:security: WPA2-PSK, phy:bgn, rssi:-15, cipher(pairwise:0x3, group:0x3), pmf:0, [0m
+[0;32mI (8007) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (8017) wifi:pm start, type:1, aid:0x3, trans-BSSID:a2:5c:7d:05:a5:e3, BSSID[5]:0xe3, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (8027) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (8027) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (8037) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (8047) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (8057) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (8077) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (8087) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (8087) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (8097) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (8107) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;33mW (8157) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100e3a5, TALO:0x57d5ca2, (ssn:1, win:64, cur_ssn:1), CONF:0xc0000005[0m
+[0;32mI (9167) esp_netif_handlers: example_netif_sta ip: 10.22.230.95, mask: 255.255.255.0, gw: 10.22.230.53[0m
+[0;32mI (9167) example_connect: Got IPv4 event: Interface "example_netif_sta" address: 10.22.230.95[0m
+[0;32mI (9417) example_connect: Got IPv6 event: Interface "example_netif_sta" address: fe80:0000:0000:0000:a2f2:62ff:fe45:de48, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[0;32mI (9417) example_common: Connected to example_netif_sta[0m
+[0;32mI (9417) example_common: - IPv4 address: 10.22.230.95,[0m
+[0;32mI (9427) example_common: - IPv6 address: fe80:0000:0000:0000:a2f2:62ff:fe45:de48, type: ESP_IP6_ADDR_IS_LINK_LOCAL[0m
+[1;31mE (9437) mqtt_client: Error parse uri = mqtt:10.22.230.115[0m
+[1;31mE (9437) mqtt_client: Client was not initialized[0m
+[0;32mI (9447) main_task: Returned from app_main()[0m
+[0;32mI (15417) example_connect: Got IPv6 event: Interface "example_netif_sta" address: 2804:0018:6850:8483:a2f2:62ff:fe45:de48, type: ESP_IP6_ADDR_IS_GLOBAL[0m
