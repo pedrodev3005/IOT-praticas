@@ -18,3 +18,6 @@
 ## Print saída no terminal (Atividade 2)
 
 <img width="879" height="494" alt="Captura de Tela 2026-03-16 às 12 05 49" src="https://github.com/user-attachments/assets/8a06e317-e911-456d-ae0a-6f87880caa4c" />
+
+## Print da saída no terminal(atividade mqtt)
+<img width="1727" height="1028" alt="Captura de Tela 2026-03-26 às 11 21 41" src="https://github.com/user-attachments/assets/74a998c9-ec63-48a6-a44f-6a8167922ee0" />
