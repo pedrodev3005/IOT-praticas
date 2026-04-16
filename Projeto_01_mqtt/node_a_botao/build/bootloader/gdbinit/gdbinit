@@ -1,0 +1,2 @@
+source C:/Users/Sophia/ESP32/node_a_botao/build/bootloader/gdbinit/symbols
+source C:/Users/Sophia/ESP32/node_a_botao/build/bootloader/gdbinit/connect
